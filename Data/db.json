@@ -1,0 +1,42 @@
+{
+
+  "Question" :[
+    {
+        "questionimage" : "finland",
+        "answeroption": [
+            {"answertext":"Finlad","iscorrect":"true" },
+            {"answertext":"Uraguay","iscorrect":"false" },
+            {"answertext":"Spain","iscorrect":"false" },
+            {"answertext":"Oman","iscorrect":"false" }
+        ]       
+    },
+    {
+        "questionimage" : "turkey",
+        "answeroption": [
+            {"answertext":"UAE","iscorrect":"false" },
+            {"answertext":"Turkey","iscorrect":"true" },
+            {"answertext":"Australia","iscorrect":"false" },
+            {"answertext":"Russia","iscorrect":"false" }
+        ]       
+    },
+    {
+        "questionimage" : "korea",
+        "answeroption": [
+            {"answertext":"Ukraine","iscorrect":"false" },
+            {"answertext":"Russia","iscorrect":"false" },
+            {"answertext":"South Korea","iscorrect":"true" },
+            {"answertext":"South Africa","iscorrect":"false" }
+        ]       
+    },
+    {
+        "questionimage" : "iran",
+        "answeroption": [
+            {"answertext":"Tajikistan","iscorrect":"false" },
+            {"answertext":"Ukraine","iscorrect":"false" },
+            {"answertext":"Iran","iscorrect":"true" },
+            {"answertext":"North Korea","iscorrect":"false" }
+        ]       
+    }
+
+    ]
+}
