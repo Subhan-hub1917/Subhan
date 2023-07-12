@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Subhan/static/css/main.9e712df7.css",
-    "main.js": "/Subhan/static/js/main.8db49fee.js",
+    "main.css": "/Subhan/static/css/main.1d73f924.css",
+    "main.js": "/Subhan/static/js/main.b5d8cba3.js",
     "static/media/7SCW.gif": "/Subhan/static/media/7SCW.c95959bf03bdde736446.gif",
     "static/media/Kids 03.jpg": "/Subhan/static/media/Kids 03.a61ad10b8afc2596c808.jpg",
     "static/media/graduation_cap.jpg": "/Subhan/static/media/graduation_cap.80c3a4c353d2878b5574.jpg",
@@ -21,11 +21,11 @@
     "static/media/finland-162294__340.webp": "/Subhan/static/media/finland-162294__340.aee83c078bf58cd4713d.webp",
     "static/media/hungary-162317__340.webp": "/Subhan/static/media/hungary-162317__340.3bddf86e5ae522aa59b1.webp",
     "static/media/russia-162400__340.webp": "/Subhan/static/media/russia-162400__340.45ad44bd256f96842855.webp",
-    "main.9e712df7.css.map": "/Subhan/static/css/main.9e712df7.css.map",
-    "main.8db49fee.js.map": "/Subhan/static/js/main.8db49fee.js.map"
+    "main.1d73f924.css.map": "/Subhan/static/css/main.1d73f924.css.map",
+    "main.b5d8cba3.js.map": "/Subhan/static/js/main.b5d8cba3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e712df7.css",
-    "static/js/main.8db49fee.js"
+    "static/css/main.1d73f924.css",
+    "static/js/main.b5d8cba3.js"
   ]
 }
