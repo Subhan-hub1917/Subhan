@@ -6,7 +6,9 @@
 .blur {
     filter: blur(5px);
   }
-  
+  .bg-wight{
+    background-color: white;
+  }
 .bg-warning-light{
     background-color: rgb(199, 161, 23);
 }
@@ -69,9 +71,9 @@ body::before{
 .sidebar {
     border-left: 2px solid  var(--primary);
     position: fixed;
-    right: -450px;
+    right: -400px;
     top: 0;
-    width: 450px;
+    width: 400px;
     height: 100vh;
     background-color: var(--secondary);
     transition: right 0.3s ease-in-out;

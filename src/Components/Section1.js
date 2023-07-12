@@ -7,7 +7,7 @@ const Section1 = () => {
   const {blur}=useContext(MyContext)
     return ( 
             
-            <section className={`text-center bg-light p-5 text-dark text-center text-sm-start ${blur ? 'blur':''}`}>
+            <section className={`text-center bg-wight p-5 text-dark text-center text-sm-start ${blur ? 'blur':''}`}>
                 <div className='container'>
                     <div className='d-md-flex align-items-center justify-content-between text-center text-lg-start'>
                         <div className=''>

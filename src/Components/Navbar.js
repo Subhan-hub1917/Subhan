@@ -12,7 +12,7 @@ const Navbar = () => {
       
     return ( 
             
-            <nav className={`navbar navbar-expand-sm bg-dark navbar-dark text-light fixed-top border-bottom border-warning `}>
+            <nav className={`navbar navbar-expand bg-dark navbar-dark text-light fixed-top border-bottom border-warning `}>
                 <div className='container'>
                         <a className="text-decoration-none h3" href="#">Sub<span className='text-warning'>Han</span></a>
     

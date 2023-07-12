@@ -12,8 +12,7 @@ const QuizResult = () => {
                         <h2 className="display-5 fw-bold">Score:<span className="text-warning">{score}</span>/{(counter+1)*5}</h2>
                         <h1 className="display-5 fw-bold">Correct Answers:<span className="text-warning">{correct}</span></h1>
                         <h3 className="display-5 fw-bold">Attempted Questions:<span className="text-warning">{counter+1}</span></h3>
-                        <p className="lead">c wk ckwj ckjwe ckjew ckcjwe ckjew jeckjwe kcj wekjc wewkejc wejkc kweje ckj jwkj c wkjwc jks ckjewc ekwjw ckjew
-                            mns cmsn csn c s c,w cw ce,w cm,ew cmnew c,mew ec,ew cw,mc we,mwec menwc mnwe cmnnwewne cmwe c,mew c,mmew c,mwe ec
+                        <p className="lead">Let me know if you enjoyed it.
                         </p>
                     </div>
                         <div className="d-flex justify-content-center p-1">
