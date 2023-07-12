@@ -1,24 +1,30 @@
+import { useContext } from 'react';
+import Sidebar from './Sidebar'
 import 'bootstrap/dist/css/bootstrap.css'
+import { MyContext } from '../MyContext';
 const Navbar = () => {
+    const handleSkill = () => {
+        window.scrollTo( 1700,1700);
+      };
+      const handleEdu = () => {
+        window.scrollTo(990, 990);
+      };
+      
     return ( 
             
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light fixed-top">
+            <nav className={`navbar navbar-expand-sm bg-dark navbar-dark text-light fixed-top border-bottom border-warning `}>
                 <div className='container'>
-                        <a class="navbar-brand " href="#">Edvert<span className='text-warning'>Tech</span></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse " id="navmenu">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link " href="#">Services</a>
+                        <a className="text-decoration-none h3" href="#">Sub<span className='text-warning'>Han</span></a>
+    
+                        <div className="align-items-center justify-content-center ">
+                            <ul className="navbar-nav ms-auto">
+                                <li className="nav-item">
+                                    <a className="nav-link text-warning " href="#" onClick={handleSkill}>Skills</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">About us</a>
+                                <li className="nav-item text-warning">
+                                    <a className="nav-link text-warning ms-2" href="#" onClick={handleEdu}>Education</a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Contact us</a>
-                                </li>    
+                            <Sidebar/>
                             </ul>
                     </div>
                 </div>

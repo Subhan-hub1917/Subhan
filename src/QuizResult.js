@@ -17,9 +17,9 @@ const QuizResult = () => {
                         </p>
                     </div>
                         <div className="d-flex justify-content-center p-1">
-                            <button onClick={handleQuit}  className=" btn me-4 btn-outline-warning rounded-pill " >Give-up</button>
-                            {(counter!==Question.length-1) && <button onClick={handleContinue} className=" btn  btn-outline-warning rounded-pill ">Continue-playing</button>}
-                            {(counter===Question.length-1) && <button onClick={handleQuit} className=" btn  btn-outline-warning rounded-pill ">Finish</button>}
+                            <button onClick={handleQuit}  className=" btn me-4 btn-outline-warning rounded-pill mb-3" >Give-up</button>
+                            {(counter!==Question.length-1) && <button onClick={handleContinue} className=" btn  btn-outline-warning rounded-pill mb-3">Continue-playing</button>}
+                            {(counter===Question.length-1) && <button onClick={handleQuit} className=" btn  btn-outline-warning rounded-pill mb-3">Finish</button>}
                         </div>
                     </div>
             </div>

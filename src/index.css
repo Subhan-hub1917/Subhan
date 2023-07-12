@@ -1,11 +1,22 @@
-.bg-green{
-    background-color: green;
-    color: green;
+:root{
+    --bg-color:white;
+    --primary:rgb(254, 186, 58);
+    --secondary: rgb(33, 37, 41);
+}
+.blur {
+    filter: blur(5px);
+  }
+  
+.bg-warning-light{
+    background-color: rgb(199, 161, 23);
 }
 body::before{
     display: block;
     content: '';
     padding: 10px;
+}
+.text-purple{
+    color: purple;
 }
 .custom{
     background-color: #27a3d8;
@@ -25,64 +36,6 @@ body::before{
 .zoom:hover{
     animation:zoomed 1s ease forwards;
     }
-/*
-.navbar{
-    top:0%;
-    height: 5%;
-    position: absolute;
-}
-.main{
-    position: absolute;
-    height: 90%;
-}
-.quiz{
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    height: 100%;
-    width: 100%;
-}
-.cc{
-    background-color:cornflowerblue;
-     background-color: aqua; 
-    height: 600px;
-}
-.rr{
-    background-color: cornflowerblue;
-     background-color: blue; 
-    height: 500px;
-}
-
-.answer-section button{
-    background-color: cornflowerblue;
-    height: 80px;
-    width: 500px;
-}
-
-
-
-
-
-
-
-
-
-.footer{
-    position: absolute;
-    height: 5%;
-    bottom: 0%;
-}
-.copyright{
-    color: white;
-}
-
-
-
-
-*/
 
 @media (min-width:768px){
     .email-input{
@@ -109,4 +62,34 @@ body::before{
         transform: translatey(-10px);
     }
     
+}
+
+/* ////////////////////////////////////////////////      Sidebar      //////////////////////////////////////////////////////////// */
+
+.sidebar {
+    border-left: 2px solid  var(--primary);
+    position: fixed;
+    right: -450px;
+    top: 0;
+    width: 450px;
+    height: 100vh;
+    background-color: var(--secondary);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.sidebar-content {
+    padding: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
 }

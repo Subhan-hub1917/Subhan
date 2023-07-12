@@ -15,6 +15,7 @@ import Section5 from './Components/Section5';
 import Section6 from './Components/Section6';
 import Question from './Question';
 import QuizResult from './QuizResult';
+import Nav from './Components/Nav';
 
 //inside return there will be a context funtion that wil wrape all the content
 
@@ -26,6 +27,8 @@ function App() {
   const [quiz,setQuiz]=useState(false);
   const [result,setResult]=useState(false);
   const[unable,setUnable]=useState(true)
+  
+  const[blur,setBlur]=useState(false)
   
   const handleContinue=()=>
   { 
@@ -84,11 +87,12 @@ function App() {
   return (
     
     <div className='app'>
-      <MyContext.Provider value={{unable,score,correct,result,setResult,counter,Setcounter,handleNext,handleRight,handleScore,handleQuiz,handleQuit,handleResult,handleContinue}}>
+      <MyContext.Provider value={{unable,score,correct,result,setResult,counter,Setcounter,handleNext,handleRight,handleScore,handleQuiz,handleQuit,handleResult,handleContinue,blur,setBlur}}>
         
           <Navbar/>
+          {/* <Nav/> */}
           <Section1/>  
-          <Section2/>
+          {/* <Section2/> */}
           {
             quiz===true
             ?
@@ -104,7 +108,8 @@ function App() {
           <Section4/>
           <Section5/>
           <Section6/>
-          {/* <Main/>   */}
+          
+
           <Footer/> 
       </MyContext.Provider>
     </div>

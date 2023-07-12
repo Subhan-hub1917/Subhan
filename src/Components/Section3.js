@@ -2,49 +2,30 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { useContext } from 'react';
 import { MyContext } from '../MyContext';
+// import web1 from './Images/graduation_cap.jpg';
+import Animation2 from './Animation2';
 // import web from './Images/7SCW.gif'
 const Section3 = () => {
-    const {handleQuiz}=useContext(MyContext)
+    const {handleQuiz,blur}=useContext(MyContext)
     return ( 
             
-            <section className='bg-light p-5' >
-                <div className='container text-center'>
-                    <h1>Quizes</h1>
-                    <p>w eckjwkwe ckwe ckewckew kcew ewkcj ewkjc ewkc</p>
-                    <div className='row justify-content-between align-items-center g-4'>
-                        <div className='col-md text-center'>
+            <section className={`bg-dark text-light ${blur?'blur':''}`} >
+                    <div className='text-center text-warning bg-dark p-2'>    
+                        <h1><i className='bi bi-flag'></i></h1>
+                        <h1>Guess The Countries Flag Game</h1>
+                    </div>
+                <div className='container text-center p-4'>
+                            <div className='d-lg-flex  justify-content-center align-items-center'>
                             <div onClick={handleQuiz} className='cursor-pointer card bg-dark text-light zoom'>
-                                <div className='h1 text-warning'>
-                                    <i className='bi bi-flag'></i>
-                                </div>
-                                <div className='card-body'>
-                                    <h1 className='text-warning'>Guess The Countries Flag</h1>
-                                    <p className='lead'>loremiew iw ijwe ic weicj ewicj ewjc wejic iwe ciwe jcjiwje cijjewe wje ciew ci </p>
+                                <div  className='text-dark bg-warning rounded'>
+                                    <h1>Play Game</h1>
+                                    <h1><i className='h2 bi bi-play'></i></h1>
                                 </div>
                             </div>
-                        </div>
-                        <div className='col-md text-center'>
-                        <div className='card bg-dark text-light zoom'>
-                            <div className='h1 text-warning'>
-                                <i className='bi bi-map'></i>
-                            </div> 
-                                <div className='card-body '>
-                                    <h1 className='text-warning '>Guess The Capitals</h1>
-                                    <p className='lead'>loremiew iw ijwe ic weicj ewicj ewjc wejic iwe ciwe jcjiwje cijjewe wje ciew ci </p>
-                                </div>
+            
+                            <div>
+                                <Animation2/>
                             </div>
-                        </div>
-                        <div className='col-md text-center'>
-                        <div className='card bg-dark text-light zoom'>
-                            <div className='h1 text-warning'>
-                                <i className='bi bi-people'></i>
-                            </div> 
-                            <div className='card-body'>
-                                    <h1 className=' text-warning '>Guess The Personalities</h1>
-                                    <p className='lead'>loremiew iw ijwe ic weicj ewicj ewjc wejic iwe ciwe jcjiwje cijjewe wje ciew ci </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 

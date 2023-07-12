@@ -3,10 +3,11 @@ import { MyContext } from "./MyContext";
 import Question from './Question';
 
 const Quiz = () => {
-    const {unable,startquiz,setStartquiz,result,setResult,counter,Setcounter,handleScore,handleNext,handleRight,handleResult}=useContext(MyContext)
+    const {unable,startquiz,setStartquiz,result,setResult,counter,Setcounter,handleScore,handleNext,handleRight,handleResult,blur}=useContext(MyContext)
     return ( 
 
-        <section className="bg-dark p-5">
+
+        <section className={`bg-dark p-5 ${blur ? 'blur':''}`}>
             <div className="container">
                     <div className="row align-items-center justify-content-between">
                         <div className="col-lg-6 ">
